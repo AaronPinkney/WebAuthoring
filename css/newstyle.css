@@ -1,0 +1,151 @@
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Everything here has to do with flex */
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.flexItem {
+  flex: 0 0 70%;
+}
+
+.col2 {
+  flex: 0 0 15%;
+}
+
+.imgCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.wordWrap {
+  /* This has flex for centering */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 95%;
+  word-break: break-all;
+  margin: 0 auto;
+}
+
+
+/* This has to do with the text that shows on the page */
+.text {
+  width: initial;
+  height: 75vh;
+}
+
+.text p {
+  background-color: #bd3574cc;
+  color: white;
+  padding: 0.25em;
+  border-radius: 1em;
+}
+
+/* Background image stuff */
+.bgMiddle {
+  background-image: url(../assets/monuments.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+}
+
+.flexItem img {
+  max-width: 9em;
+}
+
+.titleImage {
+  max-width: 15em !important;
+}
+
+/* Popbox css */
+.boxPop {
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51,51,51,0.7);
+  z-index: 10;
+}
+
+.boxPopContainer {
+  width: 50%;
+  align-self: center;
+}
+
+.bobPopTop {
+  position: fixed;
+  width: 10em;
+  align-self: center;
+  top: 0;
+}
+
+/* Misc */
+.button {
+  background: #bd3574;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.checkInputs {
+    background-color: #bd3574cc;
+    color: white;
+    padding: 0.25em;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+
+  .bgMiddle {
+    background-size: cover;
+  }
+
+  .text {
+    height: 50vh;
+  }
+
+  .flexItem {
+    flex: 1;
+  }
+
+  .col2 {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flexItem img {
+    max-width: 7em;
+  }
+
+  .col2 a {
+    padding: 0.2em;
+  }
+
+  .boxPopContainer {
+    width: initial;
+  }
+
+}

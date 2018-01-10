@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+head{
+	height: 1px;
+}
+
+body{
+ 	background-color: white;
+	color: orange;
+ 	text-align: center;
+ 	font-family: "Times New Roman", Times, serif;
+	text-shadow: 2px 1px 1px black;
+}
+
+img#titleimage {
+	position: absolute;
+	z-index: 100;
+	display: block;
+	margin: auto;
+	padding: 1px;
+	max-width:20%;
+	max-height: 90%;
+	height: auto\9;
+	width: auto;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%, -50%);
+}
+
+p{
+	position: absolute;
+	text-align: center;
+	z-index: 100;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+}
+img#backingimage {
+	position: absolute;
+	display: block;
+	margin: auto;
+	padding: 1px;
+	max-width:50%;
+	max-height: 85%;
+	min-width: 200px;
+	min-height: 200px;
+	height: auto\9;
+	width: auto;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#leftbanner{
+	max-width: 25%;
+	right: 91%;
+	top: 20%;
+	position: absolute;
+}
+
+img#fungus{
+	display: block;
+	position: absolute;
+	min-width: 100px;
+	max-width: 20%;
+	height: auto;
+	left: 50%;
+}
+img#science{
+	display: block;
+	position: absolute;
+	min-width: 100px;
+	max-width: 15%;
+	height: auto;
+	left: 10%;
+	top: 40%;
+}
+img#makeyourself{
+	display: block;
+	position: absolute;
+	min-width: 100px;
+	max-width: 15%;
+	height: auto;
+	left: 10%;
+}
+img#acrow{
+	display: block;
+	position: absolute;
+	min-width: 100px;
+	max-width: 20%;
+	height: auto;
+	left: 50%;
+	top:-20%;
+}
+img#morningview{
+	max-width: 15%;
+	height: auto;
+	right: 10%;
+}
+img#lightgrenades{
+	max-width: 15%;
+	height: auto;
+	right: 10%;
+}
+img#ifnotnow{
+	max-width: 15%;
+	height: auto;
+	right: 10%;
+}
+img#trustfall{
+	max-width: 15%;
+	height: auto;
+	right: 10%;
+}
+
+@media only screen and (min-width:320px){
+
+	img#backingimage{
+		max-width: 288px;
+		padding-left: 1cm;
+	}
+	img#titleimage{
+		max-width: 115.2px;
+	}
+}
+@media only screen and (min-width:480px){
+
+	img#backingimage {
+		max-width: 460.8px;
+		margin: auto;
+		padding-left: 0cm;
+	}
+	img#titleimage{
+		max-width: 184.32px;
+	}
+}
+@media only screen and (min-width:768px){
+
+	img#backingimage {
+		max-width: 595.2px;
+		margin: auto;
+	}
+	img#titleimage{
+		max-width: 238.08px;
+	}
+}
+@media only screen and (min-width:992px){
+
+	img#backingimage {
+		max-width: 720px;
+		margin: auto;
+	}
+	img#titleimage{
+		max-width: 288px;
+	}
+}
+@media only screen and (min-width:1200px){
+
+	img#backingimage {
+		max-width: 1200px;
+		margin: auto;
+	}
+	img#titleimage{
+		max-width: 400px;
+	}
+}
